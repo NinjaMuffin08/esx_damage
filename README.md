@@ -1,18 +1,16 @@
-# esx_duty
+# esx_damage
 
 [REQUIREMENTS]
   
-* ESX Jobs Support
-  * esx_policejob => https://github.com/ESX-Org/esx_policejob
-  * esx_ambulancejob => https://github.com/ESX-Org/esx_ambulancejob
+* ESX Support
+  * es_extended
+  * essentialmode
 
 [INSTALLATION]
 
 1) CD in your resources/[esx] folder
 
-3) Import ``jobs.sql`` in your database
-
-4) Add this in your server.cfg :
-``start esx_duty``
+2) Add this in your server.cfg :
+``start esx_damage``
 
 lua
