@@ -30,7 +30,7 @@ Citizen.CreateThread(function()
     Citizen.Wait(0)
 
 	local player, distance = ESX.Game.GetClosestPlayer()
-	if distance ~= -1 and distance <= 1.5 then	
+	if distance ~= -1 and distance <= 1.5 and not IsPedInAnyVehicle(GetPlayerPed(-1)) then	
 		if IsPedDeadOrDying(GetPlayerPed(player)) then
 		 hintToDisplay(_U('press_e'))
 			if IsControlPressed(0,  Keys['E']) then
@@ -44,7 +44,7 @@ Citizen.CreateThread(function()
 				--exits animation			
 				ClearPedTasksImmediately(playerPed)
 
-					if d == -1569615261 or d == 1737195953 or d == 1317494643 or d == -1786099057 or d == 1141786504 or d == -2067956739 or d == -868994466 then
+					if d == -1569615261 or d == 1737195953 or d == 1317494643 or d == -1786099057 or d == 1141786504 or d == -2067956739 or d == -868994466 or d == -1951375401 then
 						sendNotification(_U('hardmeele'), 'warning', 2500)
 					elseif d == 453432689 or d == 1593441988 or d == 584646201 or d == -1716589765 or d == 324215364 or d == 736523883 or d == -270015777 or d == -1074790547 or d == -2084633992 or d == -1357824103 or d == -1660422300 or d == 2144741730 or d == 487013001 or d == 2017895192 or d == -494615257 or d == -1654528753 or d == 100416529 or d == 205991906 or d == 1119849093 or d == -1045183535 then
 						sendNotification(_U('bullet'), 'warning', 2500)
